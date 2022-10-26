@@ -7,4 +7,6 @@ pub enum Error {
     NotACard,
     #[error("invalid legality '{0}'")]
     InvalidLegality(String),
+    #[error("not a valid color '{0}'")]
+    InvalidColor(String),
 }
